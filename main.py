@@ -4,6 +4,11 @@
 Writes one two-part micro-confession to /output/entry.txt: a To: line
 naming who it was meant for, and the unsent message itself, one line,
 exactly as it was typed. No explanation after it.
+
+Gate (RULES.txt): the whole file must be 1-260 UTF-8 characters and the
+message line at most 200 characters. This entry is 117 characters with a
+108-character message line, so both checks pass by construction and are
+re-verified here before writing.
 """
 import os
 
